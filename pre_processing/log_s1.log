@@ -1,0 +1,8 @@
+27-Nov-23 16:40:14 - s1_timediary.py - INFO - 151301
+27-Nov-23 16:40:14 - s1_timediary.py - INFO - 150475
+27-Nov-23 16:40:15 - s1_timediary.py - INFO - Dataset info:
+27-Nov-23 16:40:15 - s1_timediary.py - INFO - Number of samples: 150475
+27-Nov-23 16:40:15 - s1_timediary.py - INFO - Number of users: 240
+27-Nov-23 16:40:15 - s1_timediary.py - INFO - Average sample for each user: 626.98
+27-Nov-23 16:40:15 - s1_timediary.py - INFO - average dates: 22.92
+27-Nov-23 16:40:15 - s1_timediary.py - INFO - Finished

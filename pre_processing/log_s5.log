@@ -1,0 +1,296 @@
+17-Dec-23 16:24:01 - s5_features.py - INFO - started
+17-Dec-23 16:24:01 - s5_features.py - INFO - reading sensor data: notificationevent
+17-Dec-23 16:24:22 - s5_features.py - INFO - reading answers data
+17-Dec-23 16:24:22 - s5_features.py - INFO - Dataset info:
+17-Dec-23 16:24:22 - s5_features.py - INFO - Number of samples: 6684339
+17-Dec-23 16:24:23 - s5_features.py - INFO - Number of users: 183
+17-Dec-23 16:24:23 - s5_features.py - INFO - Average sample for each user: 36526.44
+17-Dec-23 16:24:25 - s5_features.py - INFO - Average date: 21.39
+17-Dec-23 16:24:25 - s5_features.py - WARNING - 0/266
+17-Dec-23 16:24:25 - s5_features.py - WARNING - Skip user=0, no sensor data!
+17-Dec-23 16:24:25 - s5_features.py - WARNING - 1/266
+17-Dec-23 16:24:25 - s5_features.py - WARNING - 2/266
+17-Dec-23 16:24:25 - s5_features.py - WARNING - Skip user=2, no sensor data!
+17-Dec-23 16:24:25 - s5_features.py - WARNING - 3/266
+17-Dec-23 16:24:25 - s5_features.py - WARNING - 4/266
+17-Dec-23 16:24:25 - s5_features.py - WARNING - Skip user=4, no sensor data!
+17-Dec-23 16:24:25 - s5_features.py - WARNING - 5/266
+17-Dec-23 16:24:25 - s5_features.py - WARNING - 6/266
+17-Dec-23 16:24:25 - s5_features.py - WARNING - 7/266
+17-Dec-23 16:24:25 - s5_features.py - WARNING - 8/266
+17-Dec-23 16:24:26 - s5_features.py - WARNING - 9/266
+17-Dec-23 16:24:26 - s5_features.py - WARNING - 10/266
+17-Dec-23 16:24:26 - s5_features.py - WARNING - 12/266
+17-Dec-23 16:24:26 - s5_features.py - WARNING - 13/266
+17-Dec-23 16:24:26 - s5_features.py - WARNING - 14/266
+17-Dec-23 16:24:26 - s5_features.py - WARNING - Skip user=14, no sensor data!
+17-Dec-23 16:24:26 - s5_features.py - WARNING - 15/266
+17-Dec-23 16:24:26 - s5_features.py - WARNING - 17/266
+17-Dec-23 16:24:26 - s5_features.py - WARNING - Skip user=17, no sensor data!
+17-Dec-23 16:24:26 - s5_features.py - WARNING - 18/266
+17-Dec-23 16:24:26 - s5_features.py - WARNING - 19/266
+17-Dec-23 16:24:26 - s5_features.py - WARNING - 21/266
+17-Dec-23 16:24:26 - s5_features.py - WARNING - 22/266
+17-Dec-23 16:24:26 - s5_features.py - WARNING - 23/266
+17-Dec-23 16:24:26 - s5_features.py - WARNING - Skip user=23, no sensor data!
+17-Dec-23 16:24:26 - s5_features.py - WARNING - 24/266
+17-Dec-23 16:24:26 - s5_features.py - WARNING - 26/266
+17-Dec-23 16:24:26 - s5_features.py - WARNING - 27/266
+17-Dec-23 16:24:26 - s5_features.py - WARNING - Skip user=27, no sensor data!
+17-Dec-23 16:24:26 - s5_features.py - WARNING - 28/266
+17-Dec-23 16:24:26 - s5_features.py - WARNING - 29/266
+17-Dec-23 16:24:26 - s5_features.py - WARNING - 30/266
+17-Dec-23 16:24:26 - s5_features.py - WARNING - 31/266
+17-Dec-23 16:24:26 - s5_features.py - WARNING - 32/266
+17-Dec-23 16:24:27 - s5_features.py - WARNING - 33/266
+17-Dec-23 16:24:27 - s5_features.py - WARNING - 34/266
+17-Dec-23 16:24:27 - s5_features.py - WARNING - 35/266
+17-Dec-23 16:24:27 - s5_features.py - WARNING - Skip user=35, no sensor data is included in any window!
+17-Dec-23 16:24:27 - s5_features.py - WARNING - 36/266
+17-Dec-23 16:24:27 - s5_features.py - WARNING - 40/266
+17-Dec-23 16:24:27 - s5_features.py - WARNING - Skip user=40, no sensor data!
+17-Dec-23 16:24:27 - s5_features.py - WARNING - 41/266
+17-Dec-23 16:24:27 - s5_features.py - WARNING - 42/266
+17-Dec-23 16:24:27 - s5_features.py - WARNING - 43/266
+17-Dec-23 16:24:27 - s5_features.py - WARNING - 44/266
+17-Dec-23 16:24:27 - s5_features.py - WARNING - Skip user=44, no sensor data!
+17-Dec-23 16:24:27 - s5_features.py - WARNING - 45/266
+17-Dec-23 16:24:27 - s5_features.py - WARNING - 46/266
+17-Dec-23 16:24:27 - s5_features.py - WARNING - Skip user=46, no sensor data!
+17-Dec-23 16:24:27 - s5_features.py - WARNING - 48/266
+17-Dec-23 16:24:27 - s5_features.py - WARNING - Skip user=48, no sensor data is included in any window!
+17-Dec-23 16:24:27 - s5_features.py - WARNING - 49/266
+17-Dec-23 16:24:27 - s5_features.py - WARNING - 51/266
+17-Dec-23 16:24:27 - s5_features.py - WARNING - 52/266
+17-Dec-23 16:24:27 - s5_features.py - WARNING - Skip user=52, no sensor data is included in any window!
+17-Dec-23 16:24:27 - s5_features.py - WARNING - 53/266
+17-Dec-23 16:24:27 - s5_features.py - WARNING - 54/266
+17-Dec-23 16:24:27 - s5_features.py - WARNING - Skip user=54, no sensor data!
+17-Dec-23 16:24:27 - s5_features.py - WARNING - 55/266
+17-Dec-23 16:24:27 - s5_features.py - WARNING - 56/266
+17-Dec-23 16:24:27 - s5_features.py - WARNING - Skip user=56, no sensor data!
+17-Dec-23 16:24:27 - s5_features.py - WARNING - 57/266
+17-Dec-23 16:24:27 - s5_features.py - WARNING - 58/266
+17-Dec-23 16:24:28 - s5_features.py - WARNING - 59/266
+17-Dec-23 16:24:28 - s5_features.py - WARNING - 60/266
+17-Dec-23 16:24:28 - s5_features.py - WARNING - 61/266
+17-Dec-23 16:24:28 - s5_features.py - WARNING - 62/266
+17-Dec-23 16:24:28 - s5_features.py - WARNING - 63/266
+17-Dec-23 16:24:28 - s5_features.py - WARNING - Skip user=63, no sensor data!
+17-Dec-23 16:24:28 - s5_features.py - WARNING - 64/266
+17-Dec-23 16:24:28 - s5_features.py - WARNING - Skip user=64, no sensor data!
+17-Dec-23 16:24:28 - s5_features.py - WARNING - 65/266
+17-Dec-23 16:24:28 - s5_features.py - WARNING - 66/266
+17-Dec-23 16:24:28 - s5_features.py - WARNING - 67/266
+17-Dec-23 16:24:28 - s5_features.py - WARNING - Skip user=67, no sensor data!
+17-Dec-23 16:24:28 - s5_features.py - WARNING - 68/266
+17-Dec-23 16:24:28 - s5_features.py - WARNING - Skip user=68, no sensor data!
+17-Dec-23 16:24:28 - s5_features.py - WARNING - 70/266
+17-Dec-23 16:24:28 - s5_features.py - WARNING - 71/266
+17-Dec-23 16:24:28 - s5_features.py - WARNING - Skip user=71, no sensor data!
+17-Dec-23 16:24:28 - s5_features.py - WARNING - 72/266
+17-Dec-23 16:24:28 - s5_features.py - WARNING - 73/266
+17-Dec-23 16:24:28 - s5_features.py - WARNING - 74/266
+17-Dec-23 16:24:28 - s5_features.py - WARNING - 75/266
+17-Dec-23 16:24:28 - s5_features.py - WARNING - 76/266
+17-Dec-23 16:24:28 - s5_features.py - WARNING - 77/266
+17-Dec-23 16:24:28 - s5_features.py - WARNING - Skip user=77, no sensor data!
+17-Dec-23 16:24:28 - s5_features.py - WARNING - 79/266
+17-Dec-23 16:24:28 - s5_features.py - WARNING - Skip user=79, no sensor data!
+17-Dec-23 16:24:28 - s5_features.py - WARNING - 80/266
+17-Dec-23 16:24:29 - s5_features.py - WARNING - 81/266
+17-Dec-23 16:24:29 - s5_features.py - WARNING - Skip user=81, no sensor data!
+17-Dec-23 16:24:29 - s5_features.py - WARNING - 82/266
+17-Dec-23 16:24:29 - s5_features.py - WARNING - 83/266
+17-Dec-23 16:24:29 - s5_features.py - WARNING - 84/266
+17-Dec-23 16:24:29 - s5_features.py - WARNING - 85/266
+17-Dec-23 16:24:29 - s5_features.py - WARNING - 86/266
+17-Dec-23 16:24:29 - s5_features.py - WARNING - 87/266
+17-Dec-23 16:24:29 - s5_features.py - WARNING - 89/266
+17-Dec-23 16:24:29 - s5_features.py - WARNING - 90/266
+17-Dec-23 16:24:29 - s5_features.py - WARNING - 91/266
+17-Dec-23 16:24:29 - s5_features.py - WARNING - 92/266
+17-Dec-23 16:24:29 - s5_features.py - WARNING - 93/266
+17-Dec-23 16:24:29 - s5_features.py - WARNING - Skip user=93, no sensor data!
+17-Dec-23 16:24:29 - s5_features.py - WARNING - 94/266
+17-Dec-23 16:24:29 - s5_features.py - WARNING - Skip user=94, no sensor data!
+17-Dec-23 16:24:29 - s5_features.py - WARNING - 95/266
+17-Dec-23 16:24:29 - s5_features.py - WARNING - 96/266
+17-Dec-23 16:24:29 - s5_features.py - WARNING - 97/266
+17-Dec-23 16:24:29 - s5_features.py - WARNING - 98/266
+17-Dec-23 16:24:29 - s5_features.py - WARNING - Skip user=98, no sensor data!
+17-Dec-23 16:24:29 - s5_features.py - WARNING - 99/266
+17-Dec-23 16:24:29 - s5_features.py - WARNING - Skip user=99, no sensor data!
+17-Dec-23 16:24:29 - s5_features.py - WARNING - 100/266
+17-Dec-23 16:24:29 - s5_features.py - WARNING - 101/266
+17-Dec-23 16:24:29 - s5_features.py - WARNING - 102/266
+17-Dec-23 16:24:29 - s5_features.py - WARNING - Skip user=102, no sensor data!
+17-Dec-23 16:24:29 - s5_features.py - WARNING - 103/266
+17-Dec-23 16:24:30 - s5_features.py - WARNING - 105/266
+17-Dec-23 16:24:30 - s5_features.py - WARNING - 106/266
+17-Dec-23 16:24:30 - s5_features.py - WARNING - 107/266
+17-Dec-23 16:24:30 - s5_features.py - WARNING - 109/266
+17-Dec-23 16:24:30 - s5_features.py - WARNING - 110/266
+17-Dec-23 16:24:30 - s5_features.py - WARNING - Skip user=110, no sensor data!
+17-Dec-23 16:24:30 - s5_features.py - WARNING - 111/266
+17-Dec-23 16:24:30 - s5_features.py - WARNING - Skip user=111, no sensor data!
+17-Dec-23 16:24:30 - s5_features.py - WARNING - 112/266
+17-Dec-23 16:24:30 - s5_features.py - WARNING - 113/266
+17-Dec-23 16:24:30 - s5_features.py - WARNING - 114/266
+17-Dec-23 16:24:30 - s5_features.py - WARNING - 115/266
+17-Dec-23 16:24:30 - s5_features.py - WARNING - 116/266
+17-Dec-23 16:24:30 - s5_features.py - WARNING - 117/266
+17-Dec-23 16:24:30 - s5_features.py - WARNING - Skip user=117, no sensor data!
+17-Dec-23 16:24:30 - s5_features.py - WARNING - 118/266
+17-Dec-23 16:24:30 - s5_features.py - WARNING - 119/266
+17-Dec-23 16:24:30 - s5_features.py - WARNING - 120/266
+17-Dec-23 16:24:30 - s5_features.py - WARNING - 121/266
+17-Dec-23 16:24:30 - s5_features.py - WARNING - Skip user=121, no sensor data!
+17-Dec-23 16:24:30 - s5_features.py - WARNING - 123/266
+17-Dec-23 16:24:30 - s5_features.py - WARNING - 124/266
+17-Dec-23 16:24:30 - s5_features.py - WARNING - 126/266
+17-Dec-23 16:24:30 - s5_features.py - WARNING - 127/266
+17-Dec-23 16:24:30 - s5_features.py - WARNING - 128/266
+17-Dec-23 16:24:31 - s5_features.py - WARNING - 130/266
+17-Dec-23 16:24:31 - s5_features.py - WARNING - 131/266
+17-Dec-23 16:24:31 - s5_features.py - WARNING - 132/266
+17-Dec-23 16:24:31 - s5_features.py - WARNING - 133/266
+17-Dec-23 16:24:31 - s5_features.py - WARNING - Skip user=133, no sensor data!
+17-Dec-23 16:24:31 - s5_features.py - WARNING - 134/266
+17-Dec-23 16:24:31 - s5_features.py - WARNING - 135/266
+17-Dec-23 16:24:31 - s5_features.py - WARNING - 136/266
+17-Dec-23 16:24:31 - s5_features.py - WARNING - 137/266
+17-Dec-23 16:24:31 - s5_features.py - WARNING - 139/266
+17-Dec-23 16:24:31 - s5_features.py - WARNING - 140/266
+17-Dec-23 16:24:31 - s5_features.py - WARNING - Skip user=140, no sensor data!
+17-Dec-23 16:24:31 - s5_features.py - WARNING - 141/266
+17-Dec-23 16:24:31 - s5_features.py - WARNING - Skip user=141, no sensor data!
+17-Dec-23 16:24:31 - s5_features.py - WARNING - 144/266
+17-Dec-23 16:24:31 - s5_features.py - WARNING - 145/266
+17-Dec-23 16:24:31 - s5_features.py - WARNING - Skip user=145, no sensor data!
+17-Dec-23 16:24:31 - s5_features.py - WARNING - 146/266
+17-Dec-23 16:24:31 - s5_features.py - WARNING - 148/266
+17-Dec-23 16:24:31 - s5_features.py - WARNING - 149/266
+17-Dec-23 16:24:31 - s5_features.py - WARNING - Skip user=149, no sensor data!
+17-Dec-23 16:24:31 - s5_features.py - WARNING - 151/266
+17-Dec-23 16:24:31 - s5_features.py - WARNING - 153/266
+17-Dec-23 16:24:31 - s5_features.py - WARNING - 154/266
+17-Dec-23 16:24:31 - s5_features.py - WARNING - Skip user=154, no sensor data!
+17-Dec-23 16:24:31 - s5_features.py - WARNING - 155/266
+17-Dec-23 16:24:31 - s5_features.py - WARNING - Skip user=155, no sensor data!
+17-Dec-23 16:24:31 - s5_features.py - WARNING - 156/266
+17-Dec-23 16:24:31 - s5_features.py - WARNING - 157/266
+17-Dec-23 16:24:31 - s5_features.py - WARNING - Skip user=157, no sensor data!
+17-Dec-23 16:24:31 - s5_features.py - WARNING - 158/266
+17-Dec-23 16:24:31 - s5_features.py - WARNING - 159/266
+17-Dec-23 16:24:32 - s5_features.py - WARNING - 160/266
+17-Dec-23 16:24:32 - s5_features.py - WARNING - 161/266
+17-Dec-23 16:24:32 - s5_features.py - WARNING - 162/266
+17-Dec-23 16:24:32 - s5_features.py - WARNING - 163/266
+17-Dec-23 16:24:32 - s5_features.py - WARNING - 164/266
+17-Dec-23 16:24:32 - s5_features.py - WARNING - 165/266
+17-Dec-23 16:24:32 - s5_features.py - WARNING - 166/266
+17-Dec-23 16:24:32 - s5_features.py - WARNING - 167/266
+17-Dec-23 16:24:32 - s5_features.py - WARNING - 169/266
+17-Dec-23 16:24:32 - s5_features.py - WARNING - 170/266
+17-Dec-23 16:24:32 - s5_features.py - WARNING - Skip user=170, no sensor data!
+17-Dec-23 16:24:32 - s5_features.py - WARNING - 172/266
+17-Dec-23 16:24:32 - s5_features.py - WARNING - 173/266
+17-Dec-23 16:24:32 - s5_features.py - WARNING - 174/266
+17-Dec-23 16:24:32 - s5_features.py - WARNING - 176/266
+17-Dec-23 16:24:33 - s5_features.py - WARNING - 177/266
+17-Dec-23 16:24:33 - s5_features.py - WARNING - 178/266
+17-Dec-23 16:24:33 - s5_features.py - WARNING - 179/266
+17-Dec-23 16:24:33 - s5_features.py - WARNING - 180/266
+17-Dec-23 16:24:33 - s5_features.py - WARNING - 182/266
+17-Dec-23 16:24:33 - s5_features.py - WARNING - 184/266
+17-Dec-23 16:24:33 - s5_features.py - WARNING - 185/266
+17-Dec-23 16:24:33 - s5_features.py - WARNING - Skip user=185, no sensor data!
+17-Dec-23 16:24:33 - s5_features.py - WARNING - 187/266
+17-Dec-23 16:24:33 - s5_features.py - WARNING - 188/266
+17-Dec-23 16:24:33 - s5_features.py - WARNING - 189/266
+17-Dec-23 16:24:33 - s5_features.py - WARNING - 190/266
+17-Dec-23 16:24:33 - s5_features.py - WARNING - 191/266
+17-Dec-23 16:24:33 - s5_features.py - WARNING - 192/266
+17-Dec-23 16:24:33 - s5_features.py - WARNING - Skip user=192, no sensor data!
+17-Dec-23 16:24:33 - s5_features.py - WARNING - 193/266
+17-Dec-23 16:24:33 - s5_features.py - WARNING - Skip user=193, no sensor data!
+17-Dec-23 16:24:33 - s5_features.py - WARNING - 194/266
+17-Dec-23 16:24:33 - s5_features.py - WARNING - 195/266
+17-Dec-23 16:24:33 - s5_features.py - WARNING - 196/266
+17-Dec-23 16:24:34 - s5_features.py - WARNING - 197/266
+17-Dec-23 16:24:34 - s5_features.py - WARNING - 198/266
+17-Dec-23 16:24:34 - s5_features.py - WARNING - 199/266
+17-Dec-23 16:24:34 - s5_features.py - WARNING - 200/266
+17-Dec-23 16:24:34 - s5_features.py - WARNING - 201/266
+17-Dec-23 16:24:34 - s5_features.py - WARNING - 203/266
+17-Dec-23 16:24:34 - s5_features.py - WARNING - 204/266
+17-Dec-23 16:24:34 - s5_features.py - WARNING - 205/266
+17-Dec-23 16:24:34 - s5_features.py - WARNING - Skip user=205, no sensor data!
+17-Dec-23 16:24:34 - s5_features.py - WARNING - 206/266
+17-Dec-23 16:24:34 - s5_features.py - WARNING - 208/266
+17-Dec-23 16:24:34 - s5_features.py - WARNING - 209/266
+17-Dec-23 16:24:34 - s5_features.py - WARNING - Skip user=209, no sensor data!
+17-Dec-23 16:24:34 - s5_features.py - WARNING - 210/266
+17-Dec-23 16:24:34 - s5_features.py - WARNING - 212/266
+17-Dec-23 16:24:34 - s5_features.py - WARNING - 213/266
+17-Dec-23 16:24:34 - s5_features.py - WARNING - 214/266
+17-Dec-23 16:24:34 - s5_features.py - WARNING - Skip user=214, no sensor data!
+17-Dec-23 16:24:34 - s5_features.py - WARNING - 215/266
+17-Dec-23 16:24:35 - s5_features.py - WARNING - 216/266
+17-Dec-23 16:24:35 - s5_features.py - WARNING - 217/266
+17-Dec-23 16:24:35 - s5_features.py - WARNING - 218/266
+17-Dec-23 16:24:35 - s5_features.py - WARNING - Skip user=218, no sensor data!
+17-Dec-23 16:24:35 - s5_features.py - WARNING - 219/266
+17-Dec-23 16:24:35 - s5_features.py - WARNING - Skip user=219, no sensor data!
+17-Dec-23 16:24:35 - s5_features.py - WARNING - 220/266
+17-Dec-23 16:24:35 - s5_features.py - WARNING - 222/266
+17-Dec-23 16:24:35 - s5_features.py - WARNING - 223/266
+17-Dec-23 16:24:35 - s5_features.py - WARNING - Skip user=223, no sensor data!
+17-Dec-23 16:24:35 - s5_features.py - WARNING - 224/266
+17-Dec-23 16:24:35 - s5_features.py - WARNING - 225/266
+17-Dec-23 16:24:35 - s5_features.py - WARNING - 226/266
+17-Dec-23 16:24:35 - s5_features.py - WARNING - 227/266
+17-Dec-23 16:24:35 - s5_features.py - WARNING - Skip user=227, no sensor data!
+17-Dec-23 16:24:35 - s5_features.py - WARNING - 228/266
+17-Dec-23 16:24:35 - s5_features.py - WARNING - 229/266
+17-Dec-23 16:24:35 - s5_features.py - WARNING - 230/266
+17-Dec-23 16:24:35 - s5_features.py - WARNING - Skip user=230, no sensor data!
+17-Dec-23 16:24:35 - s5_features.py - WARNING - 231/266
+17-Dec-23 16:24:35 - s5_features.py - WARNING - 232/266
+17-Dec-23 16:24:35 - s5_features.py - WARNING - 233/266
+17-Dec-23 16:24:35 - s5_features.py - WARNING - 234/266
+17-Dec-23 16:24:35 - s5_features.py - WARNING - 235/266
+17-Dec-23 16:24:35 - s5_features.py - WARNING - 236/266
+17-Dec-23 16:24:36 - s5_features.py - WARNING - 237/266
+17-Dec-23 16:24:36 - s5_features.py - WARNING - 238/266
+17-Dec-23 16:24:36 - s5_features.py - WARNING - 239/266
+17-Dec-23 16:24:36 - s5_features.py - WARNING - Skip user=239, no sensor data!
+17-Dec-23 16:24:36 - s5_features.py - WARNING - 240/266
+17-Dec-23 16:24:36 - s5_features.py - WARNING - 241/266
+17-Dec-23 16:24:36 - s5_features.py - WARNING - 242/266
+17-Dec-23 16:24:36 - s5_features.py - WARNING - Skip user=242, no sensor data!
+17-Dec-23 16:24:36 - s5_features.py - WARNING - 243/266
+17-Dec-23 16:24:36 - s5_features.py - WARNING - 244/266
+17-Dec-23 16:24:36 - s5_features.py - WARNING - 245/266
+17-Dec-23 16:24:36 - s5_features.py - WARNING - 247/266
+17-Dec-23 16:24:36 - s5_features.py - WARNING - 248/266
+17-Dec-23 16:24:36 - s5_features.py - WARNING - 250/266
+17-Dec-23 16:24:36 - s5_features.py - WARNING - Skip user=250, no sensor data!
+17-Dec-23 16:24:36 - s5_features.py - WARNING - 251/266
+17-Dec-23 16:24:36 - s5_features.py - WARNING - 252/266
+17-Dec-23 16:24:36 - s5_features.py - WARNING - 253/266
+17-Dec-23 16:24:36 - s5_features.py - WARNING - 254/266
+17-Dec-23 16:24:36 - s5_features.py - WARNING - 255/266
+17-Dec-23 16:24:36 - s5_features.py - WARNING - 256/266
+17-Dec-23 16:24:36 - s5_features.py - WARNING - 257/266
+17-Dec-23 16:24:36 - s5_features.py - WARNING - Skip user=257, no sensor data!
+17-Dec-23 16:24:36 - s5_features.py - WARNING - 258/266
+17-Dec-23 16:24:37 - s5_features.py - WARNING - 259/266
+17-Dec-23 16:24:37 - s5_features.py - WARNING - 260/266
+17-Dec-23 16:24:37 - s5_features.py - WARNING - 261/266
+17-Dec-23 16:24:37 - s5_features.py - WARNING - 262/266
+17-Dec-23 16:24:37 - s5_features.py - WARNING - 264/266
+17-Dec-23 16:24:37 - s5_features.py - WARNING - 265/266
+17-Dec-23 16:24:37 - s5_features.py - WARNING - 266/266
+17-Dec-23 16:24:43 - s5_features.py - INFO - finished in: 42 [s]'

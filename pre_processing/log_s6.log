@@ -1,0 +1,15 @@
+30-Jan-24 16:09:29 - s7_mood_normalization.py - INFO - started
+30-Jan-24 16:09:29 - s7_mood_normalization.py - INFO - mood
+1.0      916
+2.0     2135
+3.0    19235
+4.0    49919
+5.0    18160
+Name: count, dtype: int64
+30-Jan-24 16:09:29 - s7_mood_normalization.py - INFO - viz - distribution_mood_original.png
+30-Jan-24 16:09:29 - s7_mood_normalization.py - INFO - mood
+Negative    42672
+Positive    47693
+Name: count, dtype: int64
+30-Jan-24 16:09:29 - s7_mood_normalization.py - INFO - viz - distribution_mood_normalized.png
+30-Jan-24 16:09:31 - s7_mood_normalization.py - INFO - finished in: 2 [s]'

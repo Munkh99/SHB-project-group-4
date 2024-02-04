@@ -1,0 +1,20 @@
+Morning questions
+    A1 How would you rate your sleep quality last night?
+        1-5
+    A2. How do you expect your day to be?
+        1-5
+
+Evening ITEMS
+    A7. How was your day?
+        1-5
+    A8. Did you have any problem at [college (weekdays)] today?
+        Yes/No
+    A9. What was the problem you had?
+        String
+    A10.Where you able to solve the problem (alone or with help of someone)?
+        String
+    A11.Is there anything that you would have liked to do today that was not possible because of the Covid-19 virus?
+        String
+
+
+

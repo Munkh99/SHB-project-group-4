@@ -1,0 +1,36 @@
+after cleaning each
+
+timediaries:
+    Number of samples: 150475
+    Number of users: 240
+    Average sample for each user: 626.98
+    Average dates: 22.920833333333334
+
+demographic:
+    Number of samples: 242
+    Number of users: 242
+
+timediaries x demographic matched:
+    Number of samples: 112253
+    Number of users: 158
+    Average sample for each user: 710,46
+    attending duration (days): 23
+
+applicationevent:
+    Number of samples: 54788870
+    Number of users: 234
+    Average sample for each user: 234140.47
+    Average date: 25.48
+
+notificationevent:
+    Number of samples: 6684339
+    Number of users: 183
+    Average sample for each user: 36526.44
+    Average date: 21.39
+
+for features? after integrating all
+
+27-Nov-23 23:02:35 - s6.join_features.py - INFO - Number of samples: 90365
+27-Nov-23 23:02:35 - s6.join_features.py - INFO - Number of userd: 129
+27-Nov-23 23:02:35 - s6.join_features.py - INFO - Average sample for each user: 700.5
+27-Nov-23 23:02:35 - s6.join_features.py - INFO - Std sample for each user: 160.26
