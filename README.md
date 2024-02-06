@@ -106,7 +106,7 @@ One file contains multiple functions; each analyses, and export visualization
   ```
 
 # Machine learning experiment
-  Results are in log file
+  Results are out in log file
   ```
   python main.py -l log_main.log -i data/processed/final_data_encoded_normalized.csv -o
   ```
