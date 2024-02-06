@@ -44,7 +44,7 @@ Follow these steps to set up and run the project:
   ```
 # Data processing pipeline
 
-Download required datasets in data/raw/ directory. 
+Download required datasets in /data/raw/ directory. 
 
 Execute the preprocessing scripts in the following order:
 
@@ -64,38 +64,38 @@ Execute the preprocessing scripts in the following order:
 
   Matches outputs of step 1 and 2. 
   ```
-  python pre_processing/s3_matching.py -l pre_processing/log_s3.log -i data/raw/timediariesanswers.parquet -o data/interim/
+  python pre_processing/s3_matching.py -l pre_processing/log_s3.log -i data/interim/demographic.csv -i2 data/interim/timediary.csv -o data/interim/
   ```
 
 - **Step 4: Get app names**
 
   Scrapes Google Play Store to get application group names. 
- 
   ```
-  python pre_processing/s4_get_app_names.py -i_loc data/interim/locationevent.csv -i_td data/interim/time_diaries.csv -i_ta data/interim/tasksanswers.csv -o data/processed/
+  python pre_processing/s4_get_app_names.py -l pre_processing/log_s3.log -i data/raw/applicationevent.csv -o data/interim/
   ```
 
 - **Step 5: Process features**
 
-  Process features include a notification sensor, application sensor, and the matched timediary file (output of step 3). 
+  Process features include notification sensor and application sensor. 
   ```
-  python pre_processing/s5_features.py -l pre_processing/log_s5.log -i data/raw/wu2013poi.json -o data/interim/
+  python pre_processing/s5_features.py -l pre_processing/log_s5.log -i data/raw/notificationevent.csv -o data/interim/
+
+  python pre_processing/s5_features.py -l pre_processing/log_s5.log -i data/raw/applicationevent.csv -o data/interim/
   ```
 
 - **Step 6: Join features**
-
+  from /raw/interim folder, it reads files '*_feature.csv'
   ```
-  python pre_processing/s6_join_features.py -l pre_processing/log_s6.log -i data/interim/point_of_interest_non_trans.csv -i_t data/interim/translation.json -c 'category'
+  python pre_processing/s6_join_features.py -l pre_processing/log_s6.log -i data/interim/  -o data/processed/
   ```
   
 - **Step 7: mood normalization**
 
    ```
-  python pre_processing/s7_assign_translation.py -l pre_processing/log_s7.log -i data/interim/point_of_interest_non_trans.csv -i_t data/interim/translation.json -o data/processed/
+  python pre_processing/s7_mood_normalization.py -l pre_processing/log_s7.log -i data/processed/final_data_encoded.csv -o data/processed/
   ```
-   
-  
-Customize the script parameters according to your data and file paths.
+
+You can customize the script parameters according to your data and file paths.
 
 ## Directory Descriptions
 
