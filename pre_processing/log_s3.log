@@ -1,14 +1,3 @@
-29-Jan-24 13:26:39 - s3_matching.py - INFO - started
-29-Jan-24 13:26:39 - s3_matching.py - INFO - no demographic data for user 20
-29-Jan-24 13:26:39 - s3_matching.py - INFO - no demographic data for user 37
-29-Jan-24 13:26:39 - s3_matching.py - INFO - no demographic data for user 50
-29-Jan-24 13:26:39 - s3_matching.py - INFO - no demographic data for user 104
-29-Jan-24 13:26:39 - s3_matching.py - INFO - no demographic data for user 122
-29-Jan-24 13:26:39 - s3_matching.py - INFO - no demographic data for user 125
-29-Jan-24 13:26:39 - s3_matching.py - INFO - no demographic data for user 143
-29-Jan-24 13:26:39 - s3_matching.py - INFO - no demographic data for user 202
-29-Jan-24 13:26:40 - s3_matching.py - INFO - no demographic data for user 207
-29-Jan-24 13:26:41 - s3_matching.py - INFO - 231, 146658
-29-Jan-24 13:26:41 - s3_matching.py - INFO - 231, 146658, 634.88
-29-Jan-24 13:26:45 - s3_matching.py - INFO - 231
-29-Jan-24 13:26:45 - s3_matching.py - INFO - finished in: 6 [s]'
+06-Feb-24 19:35:44 - s4_get_app_names.py - INFO - app category exists : True
+06-Feb-24 19:35:44 - s4_get_app_names.py - INFO - started
+06-Feb-24 19:35:44 - s4_get_app_names.py - INFO - reading sensor data

@@ -1,6 +1,6 @@
-24-Nov-23 17:22:22 - s2_demographic.py - INFO - Length of df: 249
-24-Nov-23 17:22:22 - s2_demographic.py - INFO - Length of df after dropna: 242
-24-Nov-23 17:22:22 - s2_demographic.py - INFO - Raw Dataset info:
-24-Nov-23 17:22:22 - s2_demographic.py - INFO - Number of samples: 242
-24-Nov-23 17:22:22 - s2_demographic.py - INFO - Number of users: 242
-24-Nov-23 17:22:22 - s2_demographic.py - INFO - Average sample for each user: 1.0
+06-Feb-24 19:32:07 - s2_demographic.py - INFO - Length of df: 249
+06-Feb-24 19:32:07 - s2_demographic.py - INFO - Length of df after dropna: 242
+06-Feb-24 19:32:07 - s2_demographic.py - INFO - Raw Dataset info:
+06-Feb-24 19:32:07 - s2_demographic.py - INFO - Number of samples: 242
+06-Feb-24 19:32:07 - s2_demographic.py - INFO - Number of users: 242
+06-Feb-24 19:32:07 - s2_demographic.py - INFO - Average sample for each user: 1.0
