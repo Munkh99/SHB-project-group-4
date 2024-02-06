@@ -38,11 +38,11 @@ project_root/
 
 Follow these steps to set up and run the project:
 
-* install project libraries:
+# install project libraries:
   ```
   pip install -r requirements.txt
   ```
-* Data processing pipeline
+# Data processing pipeline
 
 
 
