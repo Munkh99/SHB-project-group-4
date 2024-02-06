@@ -97,17 +97,18 @@ Execute the preprocessing scripts in the following order:
 
 You can customize the script parameters according to your data and file paths.
 
-## Directory Descriptions
 
-- **data/raw:** Contains raw data files that need preprocessing.
-- **data/processed:** Will store the processed data.
-- **data/interim:** Keeps intermediate data files generated during processing.
-- **data/formal:** Selected formal data files from OSM.
-- **pre_processing:** Contains preprocessing scripts to clean and transform the raw data.
-- **Code Libraries:**
-- **ontology:** Contains ontologies or definitions for informal resources.
+# Data Analysis
 
+One file contains multiple functions; each analyses, and export visualization
+  ```
+  python analyze_viz.py -l log_viz.log -i data/processed/final_data.csv -ii data/processed/final_data_encoded.csv -o plots
+  ```
 
-
+# Machine learning experiment
+  Results are in log file
+  ```
+  python main.py -l log_main.log -i data/processed/final_data_encoded_normalized.csv -o
+  ```
 
 
