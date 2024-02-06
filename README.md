@@ -51,13 +51,13 @@ Execute the preprocessing scripts in the following order:
 - **Step 1: Timediary dataset processing**
 
   ```
-  python pre_processing/s1_timediary.py -l pre_processing/log_s1.log -i data/raw/locationevent.parquet -o data/interim/
+  python pre_processing/s1_timediary.py -l pre_processing/log_s1.log -i data/raw/td_ita.dta -o data/interim/
   ```
 
 - **Step 2: Demographic dataset processing**
 
   ```
-  python pre_processing/s2_demographic.py -l pre_processing/log_s2.log -i data/interim/locationevent.csv -o data/interim/
+  python pre_processing/s2_demographic.py -l pre_processing/log_s2.log -i data/raw/data4diarynew_ITA.dta -o data/interim/
   ```
 
 - **Step 3: Matching**
