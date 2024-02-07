@@ -1,5 +1,3 @@
-import logging
-
 import pandas as pd
 from utils import PATH_TO_INTERIM_DATA, PATH_TO_RAW_DATA, get_logger
 import argparse
@@ -17,20 +15,18 @@ def main(path_to_data, path_to_output_folder):
     column_name_mapping = {
         'pilot': 'experimentid',
         'id':'userid',
-        'date_not': 'timestamp', #same in s3
+        'date_not': 'timestamp',
     }
     df.rename(columns=column_name_mapping, inplace=True)
 
     df['userid'] = df['userid'].astype(int)
-    # TODO Two class inference or 5 class inference?
-    # since we are only considering time points which has answers, we are excluding
-    # empty time points, such as during the sleep
+
+    # since we are only considering time points which has answers, we are excluding empty time points
     df_mood = df[(df['mood'] != 'No information') &
                  (df['mood'] != 'Travel') &
                  (df['mood'] != 'Expired') &
                  (df['mood'] != 'Not answer')].copy()
 
-    # df_mood['sleep'].fillna(method='ffill', inplace=True)
     df_mood['sleep'].ffill(inplace=True)
     df_mood['expectday'].ffill(inplace=True)
     df_mood['howwasday'].ffill(inplace=True)
@@ -58,15 +54,7 @@ def main(path_to_data, path_to_output_folder):
     df_mood = df_mood[(df_mood['uniproblem'] != 'No information') & (df_mood['uniproblem'] != 'Expired')]
 
     logger.info(len(df_mood))
-
-    # df_mood['sleep'] = df_mood['sleep'].astype('str')
-    # df_mood['expectday'] = df_mood['expectday'].astype('str')
-    # df_mood['howwasday'] = df_mood['howwasday'].astype('str')
-    # df_mood['uniproblem'] = df_mood['uniproblem'].astype('str')
-
     df_mood.to_csv(os.path.join(path_to_output_folder, f'timediary.csv'), index=False)
-
-
 
     ### insights start
     logger.info(f'Dataset info:')

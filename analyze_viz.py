@@ -1,17 +1,11 @@
 import argparse
-import glob
 import os
 import matplotlib.pyplot as plt
 import numpy as np
 import seaborn as sns
 import pandas as pd
-import statsmodels.api as sm
-from scipy import stats
 from scipy.stats import chi2_contingency
-from scipy.stats import pearsonr, spearmanr
-from sklearn.ensemble import RandomForestClassifier
-from sklearn.metrics import accuracy_score, classification_report
-from sklearn.model_selection import train_test_split
+
 
 from pre_processing.utils import PATH_TO_PROCESSED_DATA, get_logger, PATH_TO_INTERIM_DATA
 
@@ -218,67 +212,6 @@ def plot_degree(df, output_folder=None):
 
     return
 
-
-def analyze_places(data, output_folder=None):
-    df = data.filter(regex='where_')
-    df['mood'] = data['mood'].copy()
-    # udf = df.groupby(['mood']).agg(sum)
-    # timediary_percent = udf.div(udf.sum(axis=1), axis=0) * 100
-
-    custom_colors = {
-        5: '#FF5733',  # Warm Red
-        4: '#FFA72B',  # Warm Orange
-        3: '#FFD035',  # Neutral Yellow
-        2: '#51FFA8',  # Cool Green
-        1: '#33B5E5'  # Cool Blue
-    }
-    mood_dict = {}
-    unique_moods = df['mood'].unique()
-    # Calculate the number of rows and columns
-    num_rows = (len(unique_moods) + 1) // 2  # Add 1 to round up in case of an odd number of moods
-    num_cols = 2
-
-    # Create subplots in a 2x3 grid
-    fig, axes = plt.subplots(nrows=num_rows, ncols=num_cols, figsize=(14, 6))
-
-    # Flatten the axes array to iterate over it
-    axes = axes.flatten()
-
-    # Iterate through each mood
-    for i, mood in enumerate(unique_moods):
-        udf = df[df['mood'] == mood]
-        udf = udf.groupby(['mood']).agg(sum)
-        timediary_percent = udf.div(udf.sum(axis=1), axis=0) * 100
-        sorted_timediary_percent = timediary_percent.sum(axis=0).sort_values(ascending=False)
-
-        # Get the top 5 columns
-        top_5_columns = sorted_timediary_percent.head(5)
-        top_5_columns = top_5_columns[::-1]
-
-        # Plot on the respective subplot as a horizontal bar plot with custom colors
-        ax = axes[i]
-        bars = top_5_columns.plot(kind='barh', color=custom_colors[mood], ax=ax)
-        ax.set_title(f'Top 5 Places : {mood_convertion[mood]}')
-        ax.set_xlabel('Percentage')
-        ax.set_xlim(0, 85)
-
-        # Add percentage values on the bars
-        for bar in bars.patches:
-            width = bar.get_width()
-            label_x_pos = width + 0.2  # Adjust this value for the correct positioning
-            label_y_pos = bar.get_y() + bar.get_height() / 2
-            ax.text(label_x_pos, label_y_pos, f'{width:.2f}%', va='center')
-
-        mood_dict[mood] = top_5_columns
-
-    # fig.delaxes(axes[-1])
-    plt.tight_layout()
-    plt.savefig(os.path.join(output_folder, 'distribution_place_by_mood.png'))
-    # Show the plots
-    # plt.show()
-    return None
-
-
 def plot_mood_vs_app_category(data, output_folder):
     df = data.filter(regex='app_')
     df = df.drop(columns=['app_category_nunique', 'app_entropy_basic', 'app_nunique',
@@ -397,6 +330,7 @@ def plot_mood_vs_notif(data, output_folder, suffix=None):
 
 
 def main(path_to_data, path_to_data_encoded, path_to_output):
+    logger.info('started')
     data = pd.read_csv(
         os.path.join(path_to_data)
     )
@@ -414,25 +348,22 @@ def main(path_to_data, path_to_data_encoded, path_to_output):
     assert (len(data_encoded) == len(workdays_df) + len(weekdays_df))
 
     get_correlation_plot(data, path_to_output)
-    #
+
     plot_gender(data_encoded, path_to_output)
     plot_age(data_encoded, path_to_output)
     plot_degree(data_encoded, path_to_output)
-    #
+
     # # all, workdays, weekdays
-    #
-    # plot_hour_vs_mood_plot(data_encoded, path_to_output, suffix='overall')
-    # plot_hour_vs_mood_plot(workdays_df, path_to_output, suffix='workdays')
-    # plot_hour_vs_mood_plot(weekdays_df, path_to_output, suffix='weekdays')
+    plot_hour_vs_mood_plot(data_encoded, path_to_output, suffix='overall')
+    plot_hour_vs_mood_plot(workdays_df, path_to_output, suffix='workdays')
+    plot_hour_vs_mood_plot(weekdays_df, path_to_output, suffix='weekdays')
 
-    # plot_mood_vs_app_category(data, path_to_output)  # heatmap + barplots
+    plot_mood_vs_app_category(data, path_to_output)  # heatmap + barplots
     plot_mood_vs_notif(data, path_to_output, suffix='all')
-    # plot_mood_vs_notif(workdays_df, path_to_output, suffix='workdays')
-    # plot_mood_vs_notif(weekdays_df, path_to_output, suffix='weekdays')
+    plot_mood_vs_notif(workdays_df, path_to_output, suffix='workdays')
+    plot_mood_vs_notif(weekdays_df, path_to_output, suffix='weekdays')
 
-    # analyze_places(data, path_to_output)
-    # viz.
-    print("finished")
+    logger.info("finished")
 
 
 if __name__ == '__main__':

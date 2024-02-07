@@ -1,20 +1,15 @@
-06-Feb-24 19:40:40 - s6_join_features.py - INFO - started
-06-Feb-24 19:40:40 - s6_join_features.py - INFO - load notificationevent_feature.csv
-06-Feb-24 19:40:41 - s6_join_features.py - INFO - load timediary_feature.csv
-06-Feb-24 19:40:43 - s6_join_features.py - INFO - load applicationevent_feature.csv
-06-Feb-24 19:40:47 - s6_join_features.py - INFO - Duration days info:
-06-Feb-24 19:40:47 - s6_join_features.py - INFO - count    131.000000
-mean      22.145038
-std        0.775809
-min       21.000000
-25%       22.000000
-50%       22.000000
-75%       22.000000
-max       27.000000
-Name: duration_days, dtype: float64
-06-Feb-24 19:40:50 - s6_join_features.py - INFO - Number of samples: 90365
-06-Feb-24 19:40:50 - s6_join_features.py - INFO - Number of userd: 129
-06-Feb-24 19:40:50 - s6_join_features.py - INFO - Average sample for each user: 700.5
-06-Feb-24 19:40:50 - s6_join_features.py - INFO - Average sample for each user: 700.5
-06-Feb-24 19:40:50 - s6_join_features.py - INFO - Std sample for each user: 160.26
-06-Feb-24 19:40:50 - s6_join_features.py - INFO - finished in: 9 [s]'
+06-Feb-24 19:46:00 - s7_mood_normalization.py - INFO - started
+06-Feb-24 19:46:00 - s7_mood_normalization.py - INFO - mood
+1.0      916
+2.0     2135
+3.0    19235
+4.0    49919
+5.0    18160
+Name: count, dtype: int64
+06-Feb-24 19:46:00 - s7_mood_normalization.py - INFO - viz - distribution_mood_original.png
+06-Feb-24 19:46:00 - s7_mood_normalization.py - INFO - mood
+Negative    42672
+Positive    47693
+Name: count, dtype: int64
+06-Feb-24 19:46:00 - s7_mood_normalization.py - INFO - viz - distribution_mood_normalized.png
+06-Feb-24 19:46:01 - s7_mood_normalization.py - INFO - finished in: 2 [s]'

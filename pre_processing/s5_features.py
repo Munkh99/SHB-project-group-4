@@ -1,5 +1,4 @@
 import time
-import numpy as np
 import scipy
 import pandas as pd
 from utils import PATH_TO_INTERIM_DATA, PATH_TO_RAW_DATA, get_logger, PATH_TO_PROCESSED_DATA, ROOT_DIR, \
@@ -56,31 +55,6 @@ def applicationevent(groups):
     return out
 
 
-def location_feature(groups):
-    def _get_centermost_point(x):
-        cluster = x[['latitude', 'longitude']].to_numpy()
-        if len(cluster) > 0:
-            point = centermost_point(cluster)
-        else:
-            # there shouldn't be empty groups, so this branch is not reachable
-            # keep it for safety reasons
-            raise ValueError(f'No gps coords u={x.userid} interval=[{x.interval}]')
-        return pd.Series(point, index=['latitude', 'longitude'])
-
-    df_centermost = groups.apply(_get_centermost_point)
-
-    features = groups.agg({'longitude': [np.mean, np.min, np.max],
-                           'latitude': [np.mean, np.min, np.max],
-                           'altitude': [np.mean, np.min, np.max],
-                           'speed': [np.mean, np.min, np.max, np.std]})
-    features.columns = features.columns.map('_'.join)
-
-    rog = groups.apply(radius_of_gyration).rename('radius_of_gyration')
-    dist = groups.apply(get_total_distance_covered).rename('distance_sum')
-
-    return df_centermost.join([features, rog, dist], validate='one_to_one').add_prefix('location_')
-
-
 def main(path_to_sensor, path_to_answers, output_path):
     logger.info("started")
     start = time.time()
@@ -125,8 +99,6 @@ def main(path_to_sensor, path_to_answers, output_path):
         groupbycolumns = ['userid', 'experimentid', 'interval']
         groups = user_sensor.groupby(groupbycolumns, sort=True, group_keys=True, observed=False)
 
-        # if sensor_name == 'locationeventpertime':
-        #     ft = location_feature(groups)
         if sensor_name == 'notificationevent':
             ft = notificationevent(groups)
         elif sensor_name == 'applicationevent':

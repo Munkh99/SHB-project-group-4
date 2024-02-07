@@ -2,12 +2,10 @@ import pandas as pd
 from utils import PATH_TO_INTERIM_DATA, PATH_TO_RAW_DATA, get_logger
 import argparse
 import os
-from sklearn.impute import SimpleImputer
-
 
 def main(path_to_data, path_to_output_folder):
     df = pd.read_stata(path_to_data)
-    # print(df.head())
+
     columns_to_take = ['userid', 'w1_A01', 'nationality', 'department', 'cohort',
                        'degree', 'Extraversion', 'Agreeableness', 'Conscientiousness', 'Neuroticism', 'Openness',
                        'w1_A09UNITN']

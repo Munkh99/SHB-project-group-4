@@ -1,12 +1,10 @@
 import glob
 import time
 import numpy as np
-import scipy
 import pandas as pd
 from utils import PATH_TO_INTERIM_DATA, PATH_TO_RAW_DATA, get_logger, PATH_TO_PROCESSED_DATA, ROOT_DIR, parse_interval, \
     _intervalindex_to_columns
 
-import argparse
 import argparse
 import os
 from config import sensors_config
@@ -73,8 +71,6 @@ def get_features(path_to_sensors) -> pd.DataFrame:
     features_union = pd.get_dummies(features_union, columns=['day_period'], drop_first=True)
 
     features_union = features_union.reset_index(names=['userid', 'experimentid', 'interval'])
-
-    # features_union.reset_index()
     _intervalindex_to_columns(features_union)
     return features_union
 
@@ -118,9 +114,6 @@ def main(path_to_sensors, output_path):
     X_22_encoded.to_csv(os.path.join(output_path, f'final_data_encoded.csv'), index=False)
 
 
-
-
-
     ### insight
     logger.info(f'Number of samples: {len(X_22)}')
     logger.info(f'Number of userd: {len(X_22.userid.unique())}')
@@ -137,9 +130,6 @@ if __name__ == '__main__':
     parser.add_argument('-l', '--logs', help='path to logging file', default='log_s6.log')
     parser.add_argument('-i', '--input', help='path to sensors',
                         default=os.path.join(PATH_TO_INTERIM_DATA))
-
-    # parser.add_argument('-i2', '--input2', help='path to timediary/answers',
-    #                     default=os.path.join(PATH_TO_INTERIM_DATA, 'time_diaries_f.csv'))
     parser.add_argument('-o', '--output', help='path to output folder', default=PATH_TO_PROCESSED_DATA)
     args = parser.parse_args()
     logger = get_logger(os.path.basename(__file__), args.logs)

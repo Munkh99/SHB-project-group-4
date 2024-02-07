@@ -38,9 +38,6 @@ def main(path_to_sensor, output_path):
     logger.info("reading sensor data")
     sensor = pd.read_csv(path_to_sensor)
 
-    # s = sensor[sensor['userid'] < 20]
-    # s.to_csv(os.path.join(ROOT_DIR, 'data', 'raw', 'applicationevent.csv'), index=False)
-
     application_names = sensor.applicationname.unique()
     app_category_from_file = pd.read_csv(os.path.join(ROOT_DIR, 'data', 'appcategories.csv'))
     app_category_from_file = app_category_from_file.set_index('app_id')['category'].to_dict()
@@ -51,8 +48,6 @@ def main(path_to_sensor, output_path):
         if i % 100 == 1:
             print(f'{i}/{len(application_names)}')
         # for the first time run, it searches app names from web, from 2nd it goes to this part
-        if app == 'com.gotokeep.yoga.intl':
-            print()
 
         if app in app_category_from_file.keys():
             if app_category_from_file[app] != 'other':

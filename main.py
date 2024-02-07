@@ -1,19 +1,11 @@
 import argparse
 import os
-import numpy as np
-from io import StringIO
-from sklearn import svm
-from sklearn.model_selection import train_test_split
-from sklearn.metrics import accuracy_score
 import pandas as pd
 from matplotlib import pyplot as plt
 from sklearn.ensemble import RandomForestClassifier
-from sklearn.feature_selection import SelectFromModel
-from sklearn.metrics import accuracy_score, classification_report, confusion_matrix, f1_score
+from sklearn.metrics import accuracy_score, confusion_matrix, f1_score
 from sklearn.model_selection import train_test_split
-
 from pre_processing.utils import PATH_TO_PROCESSED_DATA, get_logger
-
 
 class classifier:
     def __init__(self, model):
@@ -26,7 +18,7 @@ class classifier:
     def evaluate(self, X_test, y_test):
         y_pred = self.model.predict(X_test)
         accuracy = accuracy_score(y_test, y_pred)
-        # classification_rep = classification_report(y_test, y_pred)
+
         f1 = f1_score(y_test, y_pred, average='weighted')
         cm = confusion_matrix(y_test, y_pred)
         self.results = {
@@ -77,8 +69,6 @@ def get_confusion_table(results):
     plt.title("Confusion Matrix")
     plt.savefig(os.path.join('/Users/munkhdelger/Documents/unitn/SHB/plots', 'ml_confusion_matrix_all.png'))
     # plt.show()
-
-
 
 
 def main(path_to_data):

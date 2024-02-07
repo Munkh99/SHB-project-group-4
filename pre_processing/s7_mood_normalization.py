@@ -6,7 +6,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-from pre_processing.utils import PATH_TO_PROCESSED_DATA, get_logger
+from utils import PATH_TO_PROCESSED_DATA, get_logger
 
 
 def plot_class_distribution(df, type, output_dir):
@@ -34,8 +34,6 @@ def main(path_to_data, output_path):
     ### plot original class distribution
     plot_class_distribution(df, 'original', '/Users/munkhdelger/Documents/unitn/SHB/plots')
 
-    ###
-
     # Calculate the global mean of the z-scores
     # df_z_score = df.groupby('userid')['mood'].transform(lambda x: (x - x.mean()) / x.std())
     # global_mean_z_score = df_z_score.mean()
@@ -52,31 +50,17 @@ def main(path_to_data, output_path):
             elif x.unique()[0] in [3, 4, 5]:
                 return 'Positive'
 
-            # elif x.unique()[0] in [3]:
-            #     return 'Neutral'
-            # elif x.unique()[0] in [4, 5]:
-            #     return 'Positive'
         else:
             # Use z-score normalization and global mean z-score threshold for heterogeneous values
             z_score = (x - x.mean()) / x.std()
             return np.where(z_score <= 0, 'Negative', 'Positive')
-            # Set your custom thresholds for classification
-
-            # negative_threshold = -0.3  # Replace with your chosen negative threshold
-            # positive_threshold = 0.3  # Replace with your chosen positive threshold
-            #
-            # # Classify based on thresholds using apply to handle the Series
-            # return np.where(z_score < negative_threshold, 'Negative',
-            #                 np.where((negative_threshold <= z_score) & (z_score <= positive_threshold), 'Neutral',
-            #                          'Positive'))
 
     df_normalized = df.copy()
 
-
     # Apply classification based on domain knowledge or z-score normalization
     df_normalized['mood'] = df_normalized.groupby('userid')['mood'].transform(classify_based_on_domain_knowledge_and_z_score)
-    # Display the result
-    print(df_normalized.mood.value_counts())
+
+    logger.info(df_normalized.mood.value_counts())
     ### plot original class distribution
     plot_class_distribution(df_normalized, 'normalized', '/Users/munkhdelger/Documents/unitn/SHB/plots')
     ###
